@@ -35,9 +35,9 @@ h1 a:hover,h1 a:focus {color: #000;}
 .gnb li a:hover,.gnb li a:focus{color: #fff;}
 /*#home{background: url(../images/bg.jpg) center 0 no-repeat;min-height:100%; width: 100%;position: relative;}*/
 #wrap{width: 100%; height: 100%;}
-#home{position: relative;width: 100%;min-height: 100%;text-align: center;color: #fff;background-image: url(../images/bg6.jpg); background-position: center;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;}
-#home .greeting{width: 730px; position: absolute;top:30%; left:124px;text-align: center;}
-#home .greeting h3{font-size: 65px; font-weight: 800;margin-bottom: 80px;position: relative;}
+#home{position: relative;width: 100%;min-height: 100%;text-align: center;color: #fff;background-image: url(../images/bg8.jpg); background-position: center;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;}
+#home .greeting{width: 730px; position: absolute;top:30%; left:50%; margin-left: -353px;text-align: center;font-family: Merriweather;}
+#home .greeting h3{font-size: 60px; font-weight: 800;margin-bottom: 80px;position: relative;}
 #home .greeting h3:after{position: absolute;bottom:-40px;left:47%; content:""; background-color: #fff;width: 50px; height: 4px;}
 #home .greeting p{font-size: 18px; color: #ccc;margin-bottom: 50px;}
 #home .greeting a{display: block;background: url(../images/more.png) 0 0 no-repeat;width: 165px; height: 52px;color: #fff; line-height: 52px; margin: 0 auto;font-weight: bold;}
