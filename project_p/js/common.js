@@ -19,9 +19,9 @@ $(function(){
 /*풀페이지*/
 $(document).ready(function() {
     $('#fullpage').fullpage({
-      anchors: ['firstPage', 'secondPage', '3rdPage','4thpage'],
-      // sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
-      css3: true,
+      verticalCentered: true,
+      anchors: ['firstPage', 'secondPage', '3rdPage','4thpage','5thPage','6thPage'],
+      // css3: true,
       afterLoad: function(anchorLink, index){
         var header  = $(".pc #header");
         if(index > 1){
@@ -48,3 +48,9 @@ $( function() {
   $("#progressbar3 .ui-progressbar-value").text("30%")
 
 });
+
+$(function(){
+  $( '.zoom-image' ).zoomImage({
+      touch: true
+    });
+})

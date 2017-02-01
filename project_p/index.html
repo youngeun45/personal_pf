@@ -13,10 +13,14 @@
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/bootstrap-theme.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
-<script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript" src="js/scrolloverflow.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/zoom-image.css">
 <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.0/vivus.js"></script>
+<script type="text/javascript" src="js/scrolloverflow.js"></script>
+<script src="js/zoom-image.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.0/vivus.js"></script> -->
 
 <title>웹퍼블리셔 김|영|은</title>
 </head>
@@ -24,13 +28,13 @@
     <!-- 헤더시작 -->
     <header id="header">
         <p class="skip_menu"><a href="#home">본문바로가기</a></p>
-        <h1><a href="index.html">WEB PUBLISHERE KYE</a></h1>
+        <h1 data-menuanchor="firstPage"><a href="#firstPage">WEB PUBLISHERE KYE</a></h1>
         <h2 class="blind">메인메뉴</h2>
         <ul id="menu">
             <li data-menuanchor="firstPage"><a href="#firstPage">HOME</a></li>
             <li data-menuanchor="secondPage"><a href="#secondPage">ABOUT YE</a></li>
-            <li data-menuanchor="3rdPage"><a href="#3rdPage">PROTFOLIO</a></li>
-            <li data-menuanchor="4thpage"><a href="#4thpage">CONTACT</a></li>
+            <li data-menuanchor="5thPage"><a href="#5thPage">PROTFOLIO</a></li>
+            <li data-menuanchor="6thPage"><a href="#6thPage">CONTACT</a></li>
         </ul>
     </header>
     <!-- 헤더종료 -->
@@ -298,29 +302,35 @@
 	    </div>
 	</div>
 	<!-- 어바웃김영은종료 -->
-	<div  class="section" id="section2">
+	<div  class="section  fp-auto-height" id="section2">
 	    <div class="container">
 	        <h3 class="co_wh">나의 관심사</h3>
-	        <ul>
+	        <ul class="clearFix">
 	            <li>
-	                <img src="" alt="">
+	               <figure class="zoom-image">
+					    <figure></figure>
+				  </figure>
 	                <h4>사람</h4>
 	                <p>1주에 한번이상 친구들과 만남</p>
 	            </li>
 	            <li>
-	                <img src="" alt="">
+	               <figure class="zoom-image">
+					    <figure></figure>
+				  </figure>
 	                <h4>등산</h4>
 	                <p>한달에 한번이상 등산</p>
 	            </li>
 	            <li>
-	                <img src="" alt="">
+	               <figure class="zoom-image">
+					    <figure></figure>
+				  </figure>
 	                <h4>음악</h4>
 	                <p>책읽을때,이동할때,작업할때 언제나 음악감상</p>
 	            </li>
 	        </ul>
 	    </div>
 	</div>
-	<div  class="section" id="section3">
+	<div  class="section  fp-auto-height" id="section3">
 		<div class="container">
 			<ul>
 				<li>
@@ -407,8 +417,8 @@
 	</div>
 </div>
     <!-- 본문종료 -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 	  new Vivus('Layer_1', {duration: 500});
-</script>    
+</script>    --> 
 </body>
 </html>

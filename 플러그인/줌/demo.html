@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Zoom jQuery Plugin Demo</title>
+  <!-- <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"> -->
+  <link rel="stylesheet" href="zoom-image/zoom-image.css">
+  <style>
+.zoom-image,  .zoom-image > figure { background-image: url( https://unsplash.it/1200/1200/?random );
+}
+
+.zoom-image {
+  width: 500px;
+  height: 500px;
+}
+</style>
+  </head>
+
+  <body>
+<figure class="zoom-image">
+    <figure></figure>
+  </figure>
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="zoom-image/zoom-image.js"></script>
+<script>
+    $( '.zoom-image' ).zoomImage({
+      touch: true
+    });
+  </script>
+</body>
+</html>
