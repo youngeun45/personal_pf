@@ -2,15 +2,19 @@
  $(window).on("resize",function(){
       var b = $("body") 
       var w = $(window).width();
-      if(w >= 1024){
+      var h = $("header")
+      if(w >= 1170){
         b.attr("class","");
         b.addClass("pc");
-        }else if(w>=640 && w < 1024){
+        h.attr("class","");
+        }else if(w>=768 && w < 1170){
         b.attr("class","");
         b.addClass("tablet");
       }else{
         b.attr("class","");
         b.addClass("mobile");
+        h.attr("class","");
+        h.addClass("on")
      }
    })
 $(function(){
@@ -48,9 +52,16 @@ $( function() {
   $("#progressbar3 .ui-progressbar-value").text("30%")
 
 });
-
+/*이미지줌*/
 $(function(){
   $( '.zoom-image' ).zoomImage({
       touch: true
     });
+})
+/*지엔비 슬라이드*/
+$(function(){
+  var h_btn = $("#header button");
+  h_btn.on("click",function(){
+    $("#menu").slideToggle("fast");
+  })
 })

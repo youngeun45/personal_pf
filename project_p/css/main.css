@@ -28,6 +28,7 @@ h3:after {position: absolute;bottom:0; left: 50%;content:""; width: 50px; height
 #header.on{background-color: #fff;}
 #header.on h1 a{font-size: 16px; color: #a9203a;}
 #header.on #menu li a{color: #a9203a;}
+#header button{display: none;}
 .skip_menu a{display: block;width: 100%;padding: 10px; background-color: #000; color: #fff;position: absolute;left:0; top:-100px;text-align: center;}
 .skip_menu a:focus{top:0;}
 h1 a{font-size: 20px; line-height: 20px;font-weight: 800;color: #eee;transition: all 0.2s linear}
@@ -40,7 +41,7 @@ h1 a:hover,h1 a:focus {color: #fff;}
 #fullpage{width: 100%; height: 100%;}
 #section0{position: relative;width: 100%;min-height: 100%;text-align: center;color: #fff;background-image: url(../images/bg.jpg); background-position: center;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;}
 #section0 .greeting{width: 730px; position: absolute;top:354px; left:50%; margin-left: -353px;text-align: center;font-family: Merriweather;}
-#section0 .greeting h2{font-size: 60px; font-weight: 800;margin-bottom: 80px;position: relative;}
+#section0 .greeting h2{font-size: 60px !important; font-weight: 800;margin-bottom: 80px;position: relative;}
 #section0 .greeting h2:after{position: absolute;bottom:-40px;left:47%; content:""; background-color: #a9203a;width: 50px; height: 4px;}
 #section0 .greeting p{font-size: 18px; color: #eee;margin-bottom: 50px;}
 #section0 .greeting a{display: block;background: url(../images/more.png) 0 0 no-repeat;width: 165px; height: 52px;color: #fff; line-height: 52px; margin: 0 auto;font-weight: bold;}
@@ -60,15 +61,24 @@ background-size: 40px 40px;background-image: linear-gradient(45deg,rgba(255,255,
 #progressbar2 .ui-progressbar-value{background-color: #736435;}
 #progressbar3 .ui-progressbar-value{background-color: #353573;}
 #section2{background-color: #a32136;}
-#section2 .container{height: 500px;padding-top: 100px;}
-#section2 .container h3.co_wh{color: #fff;}
+#section2 .container{height: 500px;padding-top: 70px;}
+#section2 .container h3.co_wh{color: #fff;margin-bottom: 20px;}
 #section2 .container h3.co_wh:after{background-color: #fff;}
-#section2 .container li{float: left;color: #fff;text-align: center;padding: 0 50px;}
+#section2 .container li{float: left;color: #fff;text-align: center;padding-bottom: 50px;}
+#section2 .container li figure{margin: 0 auto;}
 #section2 .container li h4{font-weight: 18px;}
 #section2 .container li:first-child .zoom-image,#section2 .container li:first-child .zoom-image > figure { background-image: url( ../images/interest_1.png);}
 #section2 .container li:first-child+li .zoom-image,#section2 .container li:first-child+li .zoom-image > figure { background-image: url( ../images/interest_2.png);}
 #section2 .container li:first-child+li+li .zoom-image,#section2 .container li:first-child+li+li .zoom-image > figure { background-image: url( ../images/interest_3.png);}
-
-/*.zoom-image,  .zoom-image > figure { background-image: url( ../images/interest_2.png);}*/
-
-.zoom-image {width: 250px;height: 250px;}
+#section2 .container h4,#section3 .container h4 {font-size: 20px; font-weight: 800;}
+.zoom-image {width: 200px;height: 200px;}
+#section3 .container {padding-top: 70px;height: 400px;}
+#section3 .container li{float: left;text-align: center;color: #888;font-weight: bold;}
+#section3 .container h3{margin-bottom: 20px;}
+#section4 h3 {text-align: left;}
+@media(max-width: 768px){
+#header button {display: block;position: absolute;top:7px;right: 14px;}
+#menu {display: none;background-color: #fff;right:auto; left: 0;top:50px;width: 100%;}
+#menu li{float: none;}
+#header.on #menu li a{color: #282828;font-size: 14px;}
+}
