@@ -10,10 +10,12 @@
         }else if(w>=768 && w < 1170){
         b.attr("class","");
         b.addClass("tablet");
+
+        h.addClass("on")
       }else{
         b.attr("class","");
         b.addClass("mobile");
-        h.attr("class","");
+
         h.addClass("on")
      }
    })
@@ -33,7 +35,34 @@ $(document).ready(function() {
         }else{
            header.removeClass("on");
         }
+        if(index >4){
+            $(".slideanim").addClass("slide");
+        }
+        if(index >5){
+          $("#typed").typed({
+            stringsElement: $('#typed-strings'),
+            typeSpeed: 30,
+            backDelay: 500,
+            loop:false,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); }
+        });
+
+        }
       }
+
+    });
+  });
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
     });
   });
 /*막대그래프*/
@@ -65,3 +94,4 @@ $(function(){
     $("#menu").slideToggle("fast");
   })
 })
+    function foo(){ console.log("Callback"); }
