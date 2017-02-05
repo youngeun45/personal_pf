@@ -46,7 +46,7 @@ h1 a:hover,h1 a:focus {color: #fff;}
 #section0 .greeting p{font-size: 18px; color: #eee;margin-bottom: 50px;}
 #section0 .greeting a{display: block;background: url(../images/more.png) 0 0 no-repeat;width: 165px; height: 52px;color: #fff; line-height: 52px; margin: 0 auto;font-weight: bold;}
 #section0 .greeting a:hover,#section0 .greeting a:focus{background-image: url(../images/more_ov.png);}
-#section1 {padding-top: 50px;}
+#section1 .container {padding: 70px 0;}
 #section1 dl{float: left;text-align: center;padding: 45px 0;}
 #section1 dl dt {font-size: 20px;margin-bottom: 10px;font-weight: bold;}
 #section1 dl dd {color: #888;font-size: 16px;font-weight: bold;}
@@ -54,7 +54,7 @@ h1 a:hover,h1 a:focus {color: #fff;}
 #section1 .skill dl{padding: 0 10px;}
 #section1 .skill dl dd[class*=progressbar]{margin-bottom: 25px;}
 #section1 .skill dl dd.p_ctrl{padding: 0 20px;}
-.ui-progressbar{border: 1px solid #ccc;background-color: #f1f1f1;box-shadow: }
+.ui-progressbar{border: 1px solid #ccc;background-color: #f1f1f1; }
 .ui-progressbar-value{font-size: 14px;color: #fff;height: 20px;-webkit-background-size: 40px 40px;
 background-size: 40px 40px;background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent); animation:progress-bar-stripes 2s linear infinite}
 #progressbar1 .ui-progressbar-value{background-color: #11301d;}
@@ -66,7 +66,8 @@ background-size: 40px 40px;background-image: linear-gradient(45deg,rgba(255,255,
 #section2 .container h3.co_wh:after{background-color: #fff;}
 #section2 .container li{float: left;color: #fff;text-align: center;padding-bottom: 50px;}
 #section2 .container li figure{margin: 0 auto;}
-#section2 .container li h4{font-weight: 18px;}
+#section2 .container li h4{font-weight: 18px;margin-bottom: 10px;}
+#section3 .container li p{font-size: 14px;}
 #section2 .container li:first-child .zoom-image,#section2 .container li:first-child .zoom-image > figure { background-image: url( ../images/interest_1.png);}
 #section2 .container li:first-child+li .zoom-image,#section2 .container li:first-child+li .zoom-image > figure { background-image: url( ../images/interest_2.png);}
 #section2 .container li:first-child+li+li .zoom-image,#section2 .container li:first-child+li+li .zoom-image > figure { background-image: url( ../images/interest_3.png);}
@@ -78,21 +79,24 @@ background-size: 40px 40px;background-image: linear-gradient(45deg,rgba(255,255,
 #section4{background-color: #282828;}
 #section4 h3 {text-align: left;color: #fff;margin-bottom: 30px;}
 #section4 h3:after{left:0; margin-left: 0; background-color: #fff;}
-#section4 .container{padding:70px 0;height: 800px;}
+#section4 .container{padding:70px 10px;height: 800px;}
 #section4 ul li{margin-bottom: 35px;max-width: 300px}
-#section4 ul li a{display: block;width: 100%;text-align: center;}
+#section4 ul li a{display: block;width: 100%;text-align: center;transition: all 0.2s linear}
 #section4 ul li div {max-width: 300px;margin: 0 auto;position: relative;}
-#section4 ul li a:after{display: none;content:"";width: 90%; height: 100%; background: url(../images/bg_dim.png) 0 0 repeat;position: absolute;top:0; left: 30px;margin-left:-15px ;}
+#section4 ul li a:after{opacity: 0;content:"";width: 90%; height: 100%; background: url(../images/bg_dim.png) 0 0 repeat;position: absolute;top:0; left: 30px;margin-left:-15px ;transition: all 0.2s linear}
+#section4 ul li a:before{z-index: 2;opacity: 0;content:"";width: 40px; height: 34px; background: url(../images/link.png) 0 0 repeat;position: absolute;top:44%; left: 44%;transition: all 0.2s linear}
 #section4 ul li a>img{width: 100%;}
-#section4 ul li a:hover:after{display: block;}
-#section4 ul li p{font-weight: 800;padding: 10px 0;font-size: 18px; margin: 0 auto;max-width: 300px;width: 100%;background-color: #f1f1f1;height: 100px;color: #000;}
+#section4 ul li a:hover:after,#section4 ul li a:hover:before{opacity: 1;}
+#section4 ul li p{font-size: 14px;padding: 10px 0; margin: 0 auto;max-width: 300px;width: 100%;height: 100px;color: #fff;}
+#section4 ul li p span{display: block;font-weight: 800;font-size: 18px;margin-bottom: 10px;}
+#section5 .container {padding: 70px 30px;height: 900px;}
 #section5 li{float: left;text-align: center;padding-top: 90px;background: url(../images/phone.png) 50% 50% no-repeat;}
-
 #section5 li:first-child+li{background-image: url(../images/email.png);}
 .submitBtn{text-align: center;}
 .submitBtn input {border: none; background-color: none; background: url(../images/more.png) 0 0 no-repeat;width: 165px; height: 52px;color: #fff; line-height: 52px; margin: 0 auto;font-weight: bold;}
 .submitBtn input:hover,.submitBtn input:focus{background-image: url(../images/more_ov.png);}
 .form-group textarea{height: 100px;}
+#typed-strings{width: 100%;}
 .slideanim {visibility:hidden;}
 .slide {
       animation-name: slide;
@@ -152,11 +156,17 @@ background-size: 40px 40px;background-image: linear-gradient(45deg,rgba(255,255,
 #menu {display: none;background-color: #fff;right:auto; left: 0;top:50px;width: 100%;}
 #menu li{float: none;}
 #header.on #menu li a{color: #282828;font-size: 14px;}
+#header.on #menu li a:hover,#header.on #menu li a:focus{color: #a9203a;}
 #section0 .greeting {width: 64%;margin-left: -30%;}
 #section0 .greeting h2{font-size: 30px !important;}
 #section0 .greeting p{font-size: 16px !important;}
 #section0 .greeting h2:after{left: 36%;}
 #section4 .container{height: auto;}
-#section4 ul {margin: 0 auto; max-width: 300px}
+#section4 ul {max-width: 600px; margin: 0 auto;}
+#section4 ul li p{font-size: 12px}
+.type-wrap{display: none;}
+}
+@media(max-width: 620px){
+#section4 ul {max-width: 300px;}
 
 }
